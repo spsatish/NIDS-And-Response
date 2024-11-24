@@ -42,7 +42,14 @@ Network intrusion detection is a crucial aspect of cybersecurity. It involves mo
     ```
   - Configure Snort for basic intrusion detection.
 
-- **Client VM**: 
+- **Client VM**:
+-  Create a new VM and install Ubuntu.
+  - Ensure it is connected to the same network as the IDS VM.
+
+- **Attacker VM**:
+  - Create a new VM and install Kali Linux.
+  - Kali Linux comes pre-installed with Metasploit and other penetration testing tools.
+    
 Expected Output:
 
 Snort running and logging alerts to the console or a log file.
