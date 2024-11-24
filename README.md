@@ -1,5 +1,6 @@
 # Network Intrusion Detection and Response
 
+
 ## Introduction
 Network intrusion detection is a crucial aspect of cybersecurity. It involves monitoring and analyzing network traffic for signs of unauthorized access or malicious activity. This project aims to equip you with the skills to set up an Intrusion Detection System (IDS), detect network intrusions, and respond effectively.
 
@@ -11,7 +12,6 @@ Network intrusion detection is a crucial aspect of cybersecurity. It involves mo
 ## Lab Set-up and Tools
 
 ### Network Diagram
-![Network Diagram](https://example.com/network_diagram.png)
 
 ### Lab Environment Components
 1. **Host Machine**: The primary machine used for setting up and managing the virtual environment.
