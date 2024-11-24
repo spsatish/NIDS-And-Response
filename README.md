@@ -70,5 +70,16 @@ Network intrusion detection is a crucial aspect of cybersecurity. It involves mo
    sudo nano /etc/snort/snort.conf
    ```
    Set the HOME_NET variable to the IP range of your virtual network.
+   
    Add rules to detect basic intrusions.
 
+3. Start Snort in IDS mode:
+```sh
+Copy code
+sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+```
+4. Verify Snort is monitoring traffic and logging alerts.
+
+Expected Output:
+
+Snort running and logging alerts to the console or a log file.
