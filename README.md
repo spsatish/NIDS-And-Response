@@ -103,3 +103,36 @@ Normal traffic logged by Snort without alerts.
 Malicious traffic detected and logged by Snort with alerts.
 
 
+### Task 3: Analyzing Network Traffic with Wireshark
+Objective: Capture and analyze network traffic using Wireshark on the IDS VM.
+
+**Steps**:
+
+1. Start Wireshark and select the network interface to monitor.
+2. Capture traffic while generating both normal and malicious traffic.
+3. Use Wireshark filters to isolate and analyze specific types of traffic (e.g., ICMP, TCP SYN scans).
+
+**Expected Output**:
+- Captured network traffic with clear differentiation between normal and malicious traffic.
+- Detailed analysis of packet contents and patterns.
+
+### Task 4: Responding to Detected Intrusions
+Objective: Respond to detected intrusions based on Snort alerts.
+
+**Steps**:
+
+1. Review Snort alerts and identify the type and source of the intrusion.
+2. Implement network defenses such as:
+     - Blocking the attacker's IP using iptables:
+```
+    sudo iptables -A INPUT -s <Attacker_IP> -j DROP
+```
+    - Modifying firewall rules to prevent similar attacks.
+3. Document the incident and response actions.
+
+**Expected Output**:
+
+- Effective blocking of the attacker's IP.
+- Enhanced network security through updated firewall rules.
+- Comprehensive incident response documentation.
+
