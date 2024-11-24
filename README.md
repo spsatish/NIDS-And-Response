@@ -83,3 +83,23 @@ sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
 Expected Output:
 
 Snort running and logging alerts to the console or a log file.
+
+### Task 2: Generating Network Traffic
+Objective: Generate normal and malicious network traffic to test the IDS.
+
+**Steps**:
+
+1. On the Client VM, use tools like ping, curl, or iperf to generate normal traffic.
+2. On the Attacker VM, use Metasploit to launch a simple attack:
+```sh
+msfconsole
+use auxiliary/scanner/portscan/tcp
+set RHOSTS <Client_VM_IP>
+run
+```
+Expected Output:
+
+Normal traffic logged by Snort without alerts.
+Malicious traffic detected and logged by Snort with alerts.
+
+
