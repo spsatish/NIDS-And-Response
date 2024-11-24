@@ -58,3 +58,17 @@ Network intrusion detection is a crucial aspect of cybersecurity. It involves mo
   ```sh
   sudo apt-get install wireshark
 
+## Tasks
+
+### Task 1: Setting Up and Configuring Snort
+**Objective**: Set up Snort on the IDS VM to monitor network traffic.
+
+**Steps**:
+1. Install Snort on the IDS VM (if not already done).
+2. Configure Snort to monitor the network interface:
+   ```sh
+   sudo nano /etc/snort/snort.conf
+   ```
+   Set the HOME_NET variable to the IP range of your virtual network.
+   Add rules to detect basic intrusions.
+
