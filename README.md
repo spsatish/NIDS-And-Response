@@ -36,6 +36,7 @@ Network intrusion detection is a crucial aspect of cybersecurity. It involves mo
 - **IDS VM**: 
   - Create a new VM and install Ubuntu.
   - Install Snort:
+  - 
  
 - **Client VM**: 
   - Create a new VM and install Ubuntu.
@@ -52,10 +53,4 @@ Network intrusion detection is a crucial aspect of cybersecurity. It involves mo
 - **Wireshark**: Install Wireshark on the IDS VM for traffic analysis.
   ```sh
   sudo apt-get install wireshark
-
-    ```sh
-    sudo apt-get update
-    sudo apt-get install snort
-    ```
-  - Configure Snort for basic intrusion detection.
 
