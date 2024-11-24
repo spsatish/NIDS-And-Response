@@ -36,6 +36,23 @@ Network intrusion detection is a crucial aspect of cybersecurity. It involves mo
 - **IDS VM**: 
   - Create a new VM and install Ubuntu.
   - Install Snort:
+ 
+- **Client VM**: 
+  - Create a new VM and install Ubuntu.
+  - Ensure it is connected to the same network as the IDS VM.
+
+- **Attacker VM**:
+  - Create a new VM and install Kali Linux.
+  - Kali Linux comes pre-installed with Metasploit and other penetration testing tools.
+
+#### 3. Configure Network Settings
+- Set all VMs to use a Host-Only Adapter in VirtualBox to ensure they are on the same virtual network and isolated from the host machine’s network.
+
+#### 4. Install and Configure Tools
+- **Wireshark**: Install Wireshark on the IDS VM for traffic analysis.
+  ```sh
+  sudo apt-get install wireshark
+
     ```sh
     sudo apt-get update
     sudo apt-get install snort
